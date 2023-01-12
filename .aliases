@@ -1,0 +1,74 @@
+### DICA: Adiciona no seu .rc ###
+#if [ -f ~/.aliases ]; then
+#	source ~/.aliases;
+#fi
+
+### Gerenciadores de Pacotes ####
+## DNF - Fedora
+#alias din='sudo dnf install'
+#alias ds='sudo dnf search'
+#alias du='sudo dnf update'
+#alias dr='sudo dnf remove'
+
+# PACMAN - ArchLinux
+alias yin='yay -S'
+alias ps='pacsearch'
+alias ys='yay -Ss'
+alias yr='yay -Rncs'
+alias yu='yay && flatpak update'
+alias yq='yay -Q'
+alias yl='yay -U'
+
+## APT - Nala - Debian
+#alias nin='sudo nala install'
+#alias ns='nala search'
+#alias nr='sudo nala remove'
+#alias nu='sudo nala upgrade'
+
+## XBPS - VoidLinux
+#alias xin='sudo xbps-install -S'
+#alias xs='xbps-search -Rs'
+#alias xr='xbps-remove'
+#alias xu='xbps-install -Syu'
+
+#### Gerenciadores de Inits ####
+
+# SystemD
+alias svst='systemctl status'
+alias svr='sudo systemctl restart'
+alias svs='sudo systemctl start'
+alias sv='sudo systemctl'
+
+# Start Service
+alias dk-s='sudo systemctl start docker'
+alias ey-s='sudo systemctl start emby-server'
+
+#### Extras ###################
+
+# Utils
+alias suv='sudo nvim'
+alias ls='exa'
+alias ll='exa -lh --icons'
+alias la='exa -lha --icons'
+alias cat='bat'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vim='nvim'
+
+## Docker
+alias dk='docker'
+
+## zsh NÃO Suporta este alias
+#alias reload='. ~/.aliases'
+
+## auto-cpufreq
+alias cpust='sudo auto-cpufreq --stats'
+
+#### Editar Arquivos de Config. ####
+
+## Edit Configs
+alias bashrc="vim ~/.bashrc"
+alias rc.lua="vim ~/.config/awesome/rc.lua"
+alias zshrc="vim ~/.zshrc"
+alias alacritty-config="vim ~/.config/alacritty/alacritty.yml"
